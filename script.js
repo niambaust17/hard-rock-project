@@ -14,7 +14,7 @@ const showSongs = songs =>
     {
         // console.log(song);
         const newSong = song.preview.slice(4, song.preview.length);
-        // console.log(newSong);
+        console.log(newSong);
         const divSong = document.createElement('div');
         divSong.className = 'single-result row align-items-center my-3 p-3';
         divSong.innerHTML = `
@@ -22,7 +22,7 @@ const showSongs = songs =>
                 <h3 class="lyrics-name">${ song.title }</h3>
                 <p class="author lead">Album by <span>${ song.artist.name }</span></p>
                 <audio controls>
-                <source src="http${ newSong }" type="audio/mpeg">
+                <source src="https${ newSong }" type="audio/mpeg">
                 </audio>
             </div>
             <div class="col-md-3 text-md-right text-center">
