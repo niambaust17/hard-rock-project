@@ -22,8 +22,7 @@ const showSongs = songs =>
                 <h3 class="lyrics-name">${ song.title }</h3>
                 <p class="author lead">Album by <span>${ song.artist.name }</span></p>
                 <audio controls>
-                // <source src="${ song.preview }" type="audio/mpeg">
-                <source src="https${ newSong }" type="audio/mpeg">
+                <source src="http${ newSong }" type="audio/mpeg">
                 </audio>
             </div>
             <div class="col-md-3 text-md-right text-center">
@@ -68,3 +67,5 @@ const showError = error =>
 {
     document.getElementById('error-msg').innerText = error;
 }
+
+// <source src="${ song.preview }" type="audio/mpeg">
