@@ -93,6 +93,7 @@ const showLyrics = lyrics =>
     else
     {
         document.querySelector('.single-lyrics').style.display = 'none';
+        toggleSpinner();
     }
 }
 
